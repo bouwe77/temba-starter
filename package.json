@@ -4,7 +4,8 @@
   "description": "Starter project for creating a REST API with Temba",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/server.js",
+    "test": "jest --watch"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,7 @@
     "jest-extended": "^0.11.5"
   },
   "dependencies": {
-    "dotenv": "^10.0.0"
+    "dotenv": "^10.0.0",
+    "temba": "^0.2.0"
   }
 }
