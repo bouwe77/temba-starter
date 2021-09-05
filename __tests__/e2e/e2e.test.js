@@ -1,7 +1,7 @@
 const fetch = require("node-fetch");
 
 const { hostname } = require("../_config");
-const resource = "/articles/";
+const resource = "/movies/";
 
 beforeEach(async () => {
   // Delete all items.
@@ -66,7 +66,7 @@ test("Create, update and delete an item", async () => {
   const jsonCreatedItem = await createNewResponse.json();
   expect(jsonCreatedItem.name).toBe("newItem");
   expect(createNewResponse.headers.get("Location")).toEndWith(
-    "/songs/" + jsonCreatedItem.id
+    resource + jsonCreatedItem.id
   );
 
   // Now there is one item. Get all items.

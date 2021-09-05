@@ -4,7 +4,7 @@
   "description": "Starter project for creating a REST API with Temba",
   "main": "server.js",
   "scripts": {
-    "start": "node src/server.js",
+    "start": "node server.js",
     "test": "jest --watch"
   },
   "repository": {
@@ -15,7 +15,8 @@
   "license": "ISC",
   "devDependencies": {
     "jest": "^27.1.0",
-    "jest-extended": "^0.11.5"
+    "jest-extended": "^0.11.5",
+    "node-fetch": "^3.0.0"
   },
   "dependencies": {
     "dotenv": "^10.0.0",
