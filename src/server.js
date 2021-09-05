@@ -1,7 +1,10 @@
 require("dotenv").config();
-const tembaServer = require("../../temba");
+const tembaServer = require("temba");
 
-const config = { connectionString: process.env.MONGO_URL };
+const config = {
+  connectionString: process.env.MONGO_URL,
+  resourceNames: ["movies"],
+};
 const server = tembaServer.create(config);
 
 const port = process.env.PORT || 3000;

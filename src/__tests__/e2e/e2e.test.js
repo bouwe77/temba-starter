@@ -1,7 +1,7 @@
 const fetch = require("node-fetch");
 
 const { hostname } = require("../_config");
-const resource = "/songs/";
+const resource = "/articles/";
 
 beforeEach(async () => {
   // Delete all items.
