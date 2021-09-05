@@ -2,7 +2,7 @@
 
 [Temba](https://github.com/bouwe77/temba) is a package for creating simple REST APIs with MongoDB.
 
-From the [Temba docs](<[Temba](https://github.com/bouwe77/temba)>):
+From the [Temba docs](https://github.com/bouwe77/temba/blob/main/readme.md):
 
 > Get a simple MongoDB REST API with zero coding in less than 30 seconds (seriously).
 >
@@ -10,7 +10,7 @@ From the [Temba docs](<[Temba](https://github.com/bouwe77/temba)>):
 
 ## Getting Started
 
-1. Clone the [temba-starter] repo:
+1. Clone the [temba-starter](https://github.com/bouwe77/temba-starter) repo:
 
 ```bash
 git clone --depth 1 https://github.com/bouwe77/temba-starter my-rest-api
@@ -25,4 +25,4 @@ npm install
 
 3. Start your app and start requesting with your favorite HTTP client!
 
-4. More about Temba and how to configure it, see the [Temba docs](<[Temba](https://github.com/bouwe77/temba)>).
+More about Temba and how to configure it, see the [Temba docs](https://github.com/bouwe77/temba/blob/main/readme.md).
