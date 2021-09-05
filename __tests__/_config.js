@@ -1,3 +1,1 @@
-module.exports = {
-  hostname: "http://localhost:5050",
-};
+export const hostname = "http://localhost:5050";

@@ -1,6 +1,6 @@
-const fetch = require("node-fetch");
+import fetch from "node-fetch";
 
-const { hostname } = require("../_config");
+import { hostname } from "../_config";
 
 test("GET on root URL returns welcome text", async () => {
   const response = await fetch(hostname);
