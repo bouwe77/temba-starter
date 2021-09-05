@@ -1,0 +1,4 @@
+node_modules
+.env
+temba-mirror
+.DS_Store

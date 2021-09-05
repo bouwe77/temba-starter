@@ -1,0 +1,22 @@
+{
+  "name": "temba-starter",
+  "version": "0.1.0",
+  "description": "Starter project for creating a REST API with Temba",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "temba-starter"
+  },
+  "author": "Bouwe (https://bouwe.io)",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.1.0",
+    "jest-extended": "^0.11.5"
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0"
+  }
+}
