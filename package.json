@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "Starter project for creating a REST API with Temba",
   "main": "server.js",
+  "type": "module",
   "scripts": {
     "start": "babel-node server.js",
     "test": "jest --watch"
@@ -14,15 +15,13 @@
   "author": "Bouwe (https://bouwe.io)",
   "license": "ISC",
   "devDependencies": {
-    "jest": "^27.1.0",
-    "jest-extended": "^0.11.5",
-    "node-fetch": "^3.0.0"
-  },
-  "dependencies": {
     "@babel/core": "^7.15.5",
     "@babel/node": "^7.15.4",
     "@babel/preset-env": "^7.15.4",
+    "@types/dotenv": "^8.2.0"
+  },
+  "dependencies": {
     "dotenv": "^10.0.0",
-    "temba": "^0.2.0"
+    "temba": "^0.4.1"
   }
 }
