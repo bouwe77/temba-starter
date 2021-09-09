@@ -1,6 +1,5 @@
 import "dotenv/config";
 import { create } from "temba";
-// import { create } from "../temba/dist/index.js";
 
 const config = {
   connectionString: process.env.MONGO_URL,
