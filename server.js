@@ -2,8 +2,8 @@ import "dotenv/config";
 import { create } from "temba";
 
 const config = {
-  connectionString: process.env.MONGO_URL,
-  resourceNames: ["movies"],
+  // connectionString: process.env.MONGO_URL,
+  // resourceNames: ["movies"],
 };
 const server = create(config);
 
