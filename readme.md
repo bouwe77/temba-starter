@@ -1,5 +1,7 @@
 # Temba Starter Project
 
+Use this starter to get a simple MongoDB REST API up and running quickly with [Temba](https://github.com/bouwe77/temba).
+
 [Temba](https://github.com/bouwe77/temba) is a package for creating simple REST APIs with MongoDB.
 
 From the [Temba docs](https://github.com/bouwe77/temba/blob/main/readme.md):
