@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-const { execSync } = require("child_process");
+import { execSync } from "child_process";
 
 const runCommand = (command) => {
   try {
@@ -23,6 +23,10 @@ const installDepsCommand = `cd ${projectName} && npm install`;
 const installedDeps = runCommand(installDepsCommand);
 if (!installedDeps) process.exit(-1);
 
+console.log("");
 console.log("Done! 🎉");
 console.log("");
+console.log("Start your Temba server as follows:");
+console.log("");
 console.log(`cd ${projectName} && npm start`);
+console.log("");

@@ -1,10 +1,14 @@
 import "dotenv/config";
 import { create } from "temba";
 
-const config = {
-  // connectionString: process.env.MONGO_URL,
-  // resourceNames: ["movies"],
-};
+// Example config:
+// const config = {
+//   resourceNames: ['movies'],
+//   connectionString: 'mongodb://localhost:27017',
+//   staticFolder: 'build',
+//   apiPrefix: 'api',
+// }
+
 const server = create(config);
 
 const port = process.env.PORT || 3000;
