@@ -9,7 +9,7 @@ import { create } from "temba";
 //   apiPrefix: 'api',
 // }
 
-const server = create(config);
+const server = create();
 
 const port = process.env.PORT || 3000;
 server.listen(port, () => {
