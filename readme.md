@@ -12,19 +12,16 @@ From the [Temba docs](https://github.com/bouwe77/temba/blob/main/readme.md):
 
 ## Getting Started
 
-1. Clone the [temba-starter](https://github.com/bouwe77/temba-starter) repo:
+1. Use the starter:
 
 ```bash
-git clone --depth 1 https://github.com/bouwe77/temba-starter my-rest-api
+npx create-temba-server my-rest-api
 ```
 
-2. Install dependencies:
+2. Start your app and start requesting with your favorite HTTP client!
 
 ```bash
-cd my-rest-api
-npm install
+cd my-rest-api && npm start
 ```
-
-3. Start your app and start requesting with your favorite HTTP client!
 
 More about Temba and how to configure it, see the [Temba docs](https://github.com/bouwe77/temba/blob/main/readme.md).

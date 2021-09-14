@@ -1,6 +1,6 @@
 {
   "name": "create-temba-server",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Starter project for creating a REST API with Temba",
   "bin": "./bin/cli.js",
   "main": "server.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "temba-starter"
+    "url": "https://github.com/bouwe77/temba-starter"
   },
   "author": "Bouwe (https://bouwe.io)",
   "license": "ISC",
