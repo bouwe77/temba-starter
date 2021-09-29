@@ -1,6 +1,6 @@
 {
   "name": "create-temba-server",
-  "version": "0.3.1",
+  "version": "0.3.6",
   "description": "Starter project for creating a REST API with Temba",
   "bin": "./bin/cli.js",
   "main": "server.js",
@@ -22,6 +22,7 @@
   },
   "dependencies": {
     "dotenv": "^10.0.0",
-    "temba": "^0.7.2"
+    "kleur": "^4.1.4",
+    "temba": "^0.7.10"
   }
 }
