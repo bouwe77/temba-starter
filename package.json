@@ -1,6 +1,6 @@
 {
   "name": "create-temba-server",
-  "version": "0.3.6",
+  "version": "0.4.0",
   "description": "Starter project for creating a REST API with Temba",
   "bin": "./bin/cli.js",
   "main": "server.js",
