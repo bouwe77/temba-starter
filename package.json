@@ -23,6 +23,6 @@
   "dependencies": {
     "dotenv": "^10.0.0",
     "kleur": "^4.1.4",
-    "temba": "^0.7.10"
+    "temba": "^0.8.0"
   }
 }
