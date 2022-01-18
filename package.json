@@ -1,12 +1,12 @@
 {
   "name": "create-temba-server",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Starter project for creating a REST API with Temba",
   "bin": "./bin/cli.js",
-  "main": "server.js",
+  "main": "src/server.js",
   "type": "module",
   "scripts": {
-    "start": "babel-node src/server.js"
+    "start": "node src/server.js"
   },
   "repository": {
     "type": "git",
@@ -23,6 +23,6 @@
   "dependencies": {
     "dotenv": "^10.0.0",
     "kleur": "^4.1.4",
-    "temba": "^0.8.0"
+    "temba": "^0.8.2"
   }
 }
