@@ -25,9 +25,6 @@ if (!installedDeps) process.exit(-1);
 
 console.log(`Cleaning up...`);
 
-const whereAreWeCommand = `pwd`;
-runCommand(whereAreWeCommand);
-
 // Replace package.json by the nice and clean template
 const movePackageJsonCommand = `cd ${projectName} && mv package.template.json package.json`;
 const packageJsonMoved = runCommand(movePackageJsonCommand);
