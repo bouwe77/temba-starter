@@ -19,7 +19,7 @@ const checkedOut = runCommand(gitCheckoutCommand);
 if (!checkedOut) process.exit(-1);
 
 console.log(`Installing dependencies...`);
-const installDepsCommand = `cd ${projectName} && npm install && cd ..`;
+const installDepsCommand = `cd ${projectName} && npm install`;
 const installedDeps = runCommand(installDepsCommand);
 if (!installedDeps) process.exit(-1);
 
