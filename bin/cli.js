@@ -19,9 +19,21 @@ const checkedOut = runCommand(gitCheckoutCommand);
 if (!checkedOut) process.exit(-1);
 
 console.log(`Installing dependencies...`);
-const installDepsCommand = `cd ${projectName} && npm install`;
+const installDepsCommand = `cd ${projectName} && npm install && cd ..`;
 const installedDeps = runCommand(installDepsCommand);
 if (!installedDeps) process.exit(-1);
+
+console.log(`Cleaning up...`);
+
+// Replace package.json by the nice and clean template
+const movePackageJsonCommand = `mv package.template.json package.json`;
+const packageJsonMoved = runCommand(movePackageJsonCommand);
+if (!packageJsonMoved) process.exit(-1);
+
+// Delete the bin folder
+const deleteBinFolderCommand = `rm -rf bin`;
+const binFolderDeleted = runCommand(deleteBinFolderCommand);
+if (!binFolderDeleted) process.exit(-1);
 
 console.log("");
 console.log("Done! 🎉");
