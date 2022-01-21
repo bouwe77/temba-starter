@@ -21,7 +21,6 @@ if (!checkedOut) process.exit(-1);
 // Copy necessary file from tmp to project folder
 const filesToCopy = [
   "src",
-  ".babelrc",
   ".env.example",
   ".gitignore",
   "package.template.json",
@@ -33,6 +32,12 @@ for (const file of filesToCopy) {
   );
   if (!copied) process.exit(-1);
 }
+
+// Rename package.template.json to package.json
+const renamed = runCommand(
+  `mv ${projectName}/package.template.json ${projectName}/package.json`
+);
+if (!renamed) process.exit(-1);
 
 // Delete tmp folder
 const deleted = runCommand(`rm -rf ${projectName}/tmp`);
