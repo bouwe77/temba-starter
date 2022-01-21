@@ -14,26 +14,35 @@ const runCommand = (command) => {
 const projectName = process.argv[2];
 
 console.log(`Cloning the temba-starter repository...`);
-const gitCheckoutCommand = `git clone --depth 1 https://github.com/bouwe77/temba-starter ${projectName}`;
+const gitCheckoutCommand = `git clone --depth 1 https://github.com/bouwe77/temba-starter ${projectName}/tmp`;
 const checkedOut = runCommand(gitCheckoutCommand);
 if (!checkedOut) process.exit(-1);
 
+// Copy necessary file from tmp to project folder
+const filesToCopy = [
+  "src",
+  ".babelrc",
+  ".env.example",
+  ".gitignore",
+  "package.template.json",
+  "readme.md",
+];
+for (const file of filesToCopy) {
+  const copied = runCommand(
+    `mv ${projectName}/tmp/${file} ${projectName}/${file}`
+  );
+  if (!copied) process.exit(-1);
+}
+
+// Delete tmp folder
+const deleted = runCommand(`rm -rf ${projectName}/tmp`);
+if (!deleted) process.exit(-1);
+
+// Install dependencies
 console.log(`Installing dependencies...`);
 const installDepsCommand = `cd ${projectName} && npm install`;
 const installedDeps = runCommand(installDepsCommand);
 if (!installedDeps) process.exit(-1);
-
-console.log(`Cleaning up...`);
-
-// Replace package.json by the nice and clean template
-const movePackageJsonCommand = `cd ${projectName} && mv package.template.json package.json`;
-const packageJsonMoved = runCommand(movePackageJsonCommand);
-if (!packageJsonMoved) process.exit(-1);
-
-// Delete the bin folder
-const deleteBinFolderCommand = `cd ${projectName} && rm -rf bin`;
-const binFolderDeleted = runCommand(deleteBinFolderCommand);
-if (!binFolderDeleted) process.exit(-1);
 
 console.log("");
 console.log("Done! 🎉");
