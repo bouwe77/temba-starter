@@ -24,15 +24,12 @@ const folder = "smoketest";
 // Remove the folder if it already exists
 run(`rm -rf ${folder}`);
 
-// Remove the .env file from the root folder
-run(`rm .env`);
-
 // Call Temba starter script
 run(`node bin/cli.js ${folder}`);
 
-// Overwrite .env with "PORT=9887"
+// Create an .env file for the port number
 run(
-  `echo "# This .env is created by the test script and can safely be removed\nPORT=9887" > .env`
+  `echo "# This .env is created by the test script and can safely be removed\nPORT=9887" > ${folder}/.env`
 );
 
 // Start the Temba server
