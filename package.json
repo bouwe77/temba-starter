@@ -22,6 +22,6 @@
   },
   "dependencies": {
     "dotenv": "^10.0.0",
-    "temba": "^0.10.11"
+    "temba": "^0.10.13"
   }
 }
