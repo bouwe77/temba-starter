@@ -1,6 +1,6 @@
 {
   "name": "create-temba-server",
-  "version": "0.12.0",
+  "version": "0.12.2",
   "description": "Starter project for creating a REST API with Temba",
   "bin": "./bin/cli.js",
   "main": "src/server.js",
@@ -15,13 +15,13 @@
   "author": "Bouwe (https://bouwe.io)",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.15.5",
-    "@babel/node": "^7.15.4",
-    "@babel/preset-env": "^7.15.4",
+    "@babel/core": "^7.22.9",
+    "@babel/node": "^7.22.6",
+    "@babel/preset-env": "^7.22.9",
     "@types/dotenv": "^8.2.0"
   },
   "dependencies": {
-    "dotenv": "^10.0.0",
-    "temba": "^0.12.0"
+    "dotenv": "^16.3.1",
+    "temba": "^0.12.2"
   }
 }
