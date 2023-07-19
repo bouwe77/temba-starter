@@ -13,6 +13,11 @@ const runCommand = (command) => {
 
 const projectName = process.argv[2];
 
+if (!projectName) {
+  console.error("Please specify a project name");
+  process.exit(-1);
+}
+
 console.log(`Cloning the temba-starter repository...`);
 const gitCheckoutCommand = `git clone --depth 1 https://github.com/bouwe77/temba-starter ${projectName}/tmp`;
 const checkedOut = runCommand(gitCheckoutCommand);
