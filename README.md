@@ -15,7 +15,7 @@ From the [Temba docs](https://github.com/bouwe77/temba/blob/main/readme.md):
 1. Create your Temba server:
 
 ```bash
-npx create-temba-server my-rest-api
+npx create-temba-server@latest my-rest-api
 ```
 
 2. Start your server:
