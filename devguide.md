@@ -18,35 +18,13 @@ The smoketest uses the current Temba version from NPM.
 
 To use the smoketest for testing a not yet released Temba version, follow these steps:
 
-1. Obtain or create a Temba build on your local computer. Typically by checking out the Temba repo, and run `npm run build` there
-
-2. `cd` into the temba-starter project folder, and copy Temba's `dist` folder to the `temba-prelease` folder:
-
-```
-rm -rf temba-prerelease
-mkdir ./temba-prerelease
-cp -r ../temba/dist/* ./temba-prerelease
-```
-
-3. Run `node test.js` to create a smoketest server.
-
-4. Stop the automatically started server.
-
-5. Open `./smoketest/src/server.js` and change the Temba import to:
-
-```
-import { create } from "../../temba-prerelease/index.js";
-```
-
-5. `npm start` the smoketest server, so now it uses the prerelease instead of the NPM version.
-
-When you want to keep the smoketest server, but just want to update the Temba prerelease again:
-
-```
-rm -rf temba-prerelease
-mkdir ./temba-prerelease
-cp -r ../temba/dist/* ./temba-prerelease
-```
+1. Clone the temba repository
+2. Build Temba with `npm run build`
+3. In the Temba root folder run `npm link`
+4. In the temba-starter folder run `npm link temba`
+5. Create and start the smoketest
+6. Any change in the Temba build (`dist` folder) is now automatically applied to smoketest's Temba package 🎉
+7. When done, in temba-starter, run `npm unlink temba`
 
 ## Updating the starter
 
