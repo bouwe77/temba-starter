@@ -23,8 +23,9 @@ To use the smoketest for testing a not yet released Temba version, follow these 
 3. In the Temba root folder run `npm link`
 4. Create and start the smoketest
 5. In the smoketest folder run `npm link temba`
-6. Any change in the Temba build (`dist` folder) is now automatically applied to smoketest's Temba package 🎉
-7. When done, in smoketest, run `npm unlink temba`
+6. To verify, run `npm ls temba`
+7. Any change in the Temba build (`dist` folder) is now automatically applied to smoketest's Temba package 🎉
+8. When done, in smoketest, run `npm unlink temba`
 
 ## Updating the starter
 
