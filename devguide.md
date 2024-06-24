@@ -41,12 +41,12 @@ The following steps need to be done:
 
 1. (or copy over `dependencies` and `devDependencies` from `package.json` to `package.template.json`)
 
-1. Push all changes to the repo.
+1. Commit and push all changes to GitHub
 
 2. Update the version number of the starter: `npm version patch|minor|major`
 
 3. Publish to NPM: `npm publish`
 
-4. Commit and push to GitHub
+4. Push to GitHub
 
-By publishing to NPM, and have users always add `@latest` to `npx create-temba-server@latest` we are always sure both existing and new users will always use the latest version.
+By publishing to NPM, and have users always add `@latest` to `npx create-temba-server@latest` we are sure both existing and new users will always use the latest version.
