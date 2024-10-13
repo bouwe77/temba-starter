@@ -20,6 +20,6 @@
     "@babel/preset-env": "^7.25.4"
   },
   "dependencies": {
-    "temba": "^0.37.0"
+    "temba": "^0.38.0"
   }
 }
