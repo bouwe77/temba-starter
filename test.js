@@ -27,11 +27,6 @@ run(`rm -rf ${folder}`);
 // Call Temba starter script
 run(`node bin/cli.js ${folder}`);
 
-// Create an .env file for the port number
-run(
-  `echo "# This .env is created by the test script and can safely be removed\nPORT=9887" > ${folder}/.env`
-);
-
 // Start the Temba server
 run(`cd ${folder} && npm start`);
 

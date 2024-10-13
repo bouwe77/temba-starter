@@ -2,16 +2,14 @@
   "main": "src/server.js",
   "type": "module",
   "scripts": {
-    "start": "node src/server.js"
+    "start": "node --watch src/server.js"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
     "@babel/node": "^7.25.0",
-    "@babel/preset-env": "^7.25.4",
-    "@types/dotenv": "^8.2.0"
+    "@babel/preset-env": "^7.25.4"
   },
   "dependencies": {
-    "dotenv": "^16.4.5",
-    "temba": "^0.37.0"
+    "temba": "^0.38.0"
   }
 }
