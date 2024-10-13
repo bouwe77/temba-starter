@@ -24,13 +24,7 @@ const checkedOut = runCommand(gitCheckoutCommand);
 if (!checkedOut) process.exit(-1);
 
 // Copy necessary file from tmp to project folder
-const filesToCopy = [
-  "src",
-  ".env.example",
-  ".gitignore",
-  "package.template.json",
-  "readme.md",
-];
+const filesToCopy = ["src", ".gitignore", "package.template.json", "readme.md"];
 for (const file of filesToCopy) {
   const copied = runCommand(
     `mv ${projectName}/tmp/${file} ${projectName}/${file}`
