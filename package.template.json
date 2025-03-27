@@ -5,6 +5,7 @@
     "start": "node src/server.js"
   },
   "devDependencies": {
+<<<<<<< Updated upstream
     "@babel/core": "^7.25.2",
     "@babel/node": "^7.25.0",
     "@babel/preset-env": "^7.25.4",
@@ -13,5 +14,13 @@
   "dependencies": {
     "dotenv": "^16.4.5",
     "temba": "^0.37.0"
+=======
+    "@babel/core": "^7.26.10",
+    "@babel/node": "^7.26.0",
+    "@babel/preset-env": "^7.26.9"
+  },
+  "dependencies": {
+    "temba": "^0.42.1"
+>>>>>>> Stashed changes
   }
 }
